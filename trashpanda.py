@@ -54,11 +54,10 @@ while True:
             with open(path+pastefile+".txt", "wb") as pfile:
                 pfile.write(rawpaste.encode("utf-8"))
             pfile.close()
-            print(f"{pfile} written to disk.")
+            print(f"{pastefile} written to disk.")
 
         elif j in alarchives:
             continue
-
     with open('alarchives.txt', 'w') as falarchives:
         for item in alarchives:
             falarchives.write("%s\n" % item)
